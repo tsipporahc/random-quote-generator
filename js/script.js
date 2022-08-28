@@ -9,6 +9,9 @@ project 1 - A Random Quote Generator
 
 /*** 
  * `quotes` array 
+ * Stores the data for the quotes.
+ * 
+ * @
 ***/
 
 let quotes = [
@@ -42,6 +45,8 @@ getRandomQuote(quotes);
 
 /***
  * `printQuote` function
+ * 
+ * @returns
 ***/
 
 
