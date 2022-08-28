@@ -1,24 +1,9 @@
 # Random Quote Generator
 
-Breaking it down
+This project was created to demonstrate foundational concepts in Javascript functions, arrays, and objects. This is the end of unit 1 project by the Treehouse Techdegree. I am currently in a place in my life where I am reconnecting with my roots. 
 
-1. How do I generate a random number?
+So, I am decided to choose quotes from black women in history. I hope these quotes can inspires others and we move into our tech journey.
 
-2. How do I use that random number to get a quote object from the quotes array?
+This most difficult part of this project was the printQuote function where I was instructed to display a new quote each time a user clicks a button. I was able to learn more about how to build upon strings and seeing how I can incorporate decision making into my program using conditionals. I want to learn more about how to enable the buttons functionality. 
 
-ideas-
-randomly select a quote from the array and then return it
-    function getRandomQuote() {
-
-        // Code to get quote from array
-    }
-
-
-
-call getRandomQuote and then print it    
-function printQuote(){
-
-        // Code to print the quote using fron project instructions
-    }
-
-Comments in code about what it is doing and how it works.
+I hope in the future to add extra features, for examples, pictures, object tags, random background colors, and auto-refeshing tho the page.  
