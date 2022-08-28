@@ -67,10 +67,12 @@ let printQuote = () => {
   }
  
   html += `
- </p>
- `; 
+  </p>
+  `; 
     
   document.getElementById('quote-box').innerHTML = html; 
+
+  return html;
 
 
 };
