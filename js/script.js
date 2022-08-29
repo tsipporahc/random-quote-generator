@@ -7,11 +7,18 @@ project 1 - A Random Quote Generator
   // Check the "Project Resources" section of the project instructions
   // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
+
+
 /*** 
- * `quotes` array 
+ * `quotes` array of objects
  * Stores the data for the quotes.
  * 
- * @
+ * @type {Array.<objects>}
+ * @param {Object[]} quotes - a list of quotes
+ * @param {string} quotes[].quote - the actual quote
+ * @param {string} quotes[].source - the person who said it
+ * @param {string} quotes[].citation - the reference to the source of the quote
+ * @param {string} quotes[].year - the year quote was said
 ***/
 
 let quotes = [
@@ -24,47 +31,45 @@ let quotes = [
   ];
 
 
-
-
 /***
  * `getRandomQuote` function
+ * Returns a random quote object.
+ * 
+ * @return {string} - random
 ***/
 
-
-let getRandomQuote = (arr) => {
-  let random = Math.floor(Math.random() * (quotes.length));
-  random = quotes[random]; // i want to grab the values only ?
-
+const getRandomQuote = () => { 
+  let random = Math.floor(Math.random() * (quotes.length)); 
+  random = quotes[random];
   return random;
 };
 
-
-getRandomQuote(quotes);
+getRandomQuote(quotes); 
 
 
 
 /***
  * `printQuote` function
+ * Displays random quote, source, citation and year to browser.
  * 
- * @returns
+ * @return {string} - html
 ***/
 
-
 let printQuote = () => {
-  let randomQuote = getRandomQuote(); // do i need parameter here?
-  let html = ''; 
+  let randomQuote = getRandomQuote();
+  let html = '';
   html +=
   `
   <p class="quote">${randomQuote.quote}</p>
   <p class="source"> ${randomQuote.source}
   `;
-  if (randomQuote.citation) { // If the random quote object has a citation property, concatenate a <span> element with the class "citation" to the HTML string.
+  if (randomQuote.citation) { // display citation from random quote object
    html += `
     <span class="citation">${randomQuote.citation}</span>
     `;
   } 
 
-  if (randomQuote.year) { // If the random quote object has a year property, concatenate a <span> element with the class "year" to the HTML string.
+  if (randomQuote.year) { // display year, from random quote object
   html += `
     <span class="year">${randomQuote.year}</span>
     `;
