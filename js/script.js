@@ -40,7 +40,7 @@ let quotes = [
 
 const getRandomQuote = () => { 
   let random = Math.floor(Math.random() * (quotes.length)); 
-  random = quotes[random];
+  random = quotes[random]; 
   return random;
 };
 
