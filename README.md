@@ -13,7 +13,6 @@ To inspire you on your coding journey!
 
 **Challenges:**
     The most difficult part of this project was the printQuote function that displays a new quote each time a user clicks a button.  I was able to learn more about how to build upon strings, and properly display it to the page. 
-    
     Not all of the quotes had a corresponding citation or year, so I had to think about how to display this information on the page alongside the quote and source.  It was challenging had to incorporate decision making into my program using conditionals.
 
 **Future Considerations:**
