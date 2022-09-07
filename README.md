@@ -1,4 +1,4 @@
-# Random Quote Generator
+# Welcome to Random Quote Generator
 
 To inspire you on your coding journey!
 
